@@ -12,9 +12,9 @@
     $koniec = ' koty'
 ?>
 
-<?php echo '$poczatek $liczba $koniec a chcemieć jeszcze dwa.'; ?>
+<?php echo '$poczatek $liczba $koniec a chce mieć jeszcze dwa.'; ?>
 <br>
-<?php echo "$poczatek $liczba $koniec a chcemieć jeszcze dwa."; ?>
+<?php echo "$poczatek $liczba $koniec a chce mieć jeszcze dwa."; ?>
 
 
 
