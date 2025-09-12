@@ -17,15 +17,16 @@
 <h1>3</h1>
 <?= 'swędzi mnie łydka' ?><br>
 <?= 'głaszczę kota po głowie' ?><br>
-<h1>4</h1>
+
+
 <!-- lubię komentować -->
-<?php // komentuje komentuje?>
+<?php // komentuje komentuje ?>
 
 <?php /*
 lubię
 mojego
 kota
-*/?>
+*/ ?>
 
 </body>
 </html>
