@@ -28,7 +28,7 @@ define("ROK",  "1993");
 define("gra" , "WarThunder"); ?>
 <?php echo 'print dla pierwszej stałej'?>
 <php print ROK ?> <br>
-
+<hr>
 
 
 
