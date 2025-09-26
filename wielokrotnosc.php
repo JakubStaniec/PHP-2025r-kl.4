@@ -14,7 +14,7 @@
             font-size: 80px;
             font-weight: bold;
             padding: 100px;
-
+            text-shadow: 5px 5px 5px green;
         }
 
         table {
