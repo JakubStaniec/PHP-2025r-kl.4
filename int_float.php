@@ -53,8 +53,7 @@ $liczba4 = -1.0E-5;
 $dodaj = "59.85" + 100;
 ?>
 
-<p>Zmienna <b>$dodaj</b> ma wartość <?= $dodaj ?>, a funkcja <b>is_numeric()</b> zwraca dla niej wynik: 
-    <?php var_dump(is_numeric($dodaj)); ?></p>
+<p>Zmienna <b>$dodaj</b> ma wartość <?= $dodaj ?>, a funkcja <b>is_numeric()</b> zwraca dla niej wynik: <?php var_dump(is_numeric($dodaj)); ?></p>
 
 
 
