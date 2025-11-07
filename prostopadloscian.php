@@ -11,6 +11,7 @@
 $b = 12;
 $c = 84;
 ?>
+
 <p>Przekątna prostopadłościanu o krawędziach długości <?=$a?>, <?=$b?> i <?=$c?> jest równa
 <?= sqrt(($a ** 2)+($b ** 2)+($c ** 2))?></p>
 <p>Pole powierzchni prostopadłościanu o krawędziach długości <?=$a?>, <?=$b?> i <?=$c?> wynosi 
