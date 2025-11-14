@@ -10,7 +10,7 @@
 color:violet;
 font-size: 150%;
 font-weight: 600;
- 
+   }
 .tak{
 
     display: inline-block;
