@@ -32,8 +32,8 @@ border-left: solid cyan 3px;
 </head>
 <body>
 <p id="a"> Data za 10 tygodni: <?= date("d-m-Y" , strtotime("+10 weeks"))?></p>           
-<p id="b"> Wigilia w roku 2222 wypada w <?= date("N" , mktime(0,0,0,12,24,2222))?></p>      
-<p id="c">Stan wojenny w Polsce wprowadzono i była to <?= date("l" , mktime(0,0,0,12,13,1981))?></p> 
+<p id="b"> Wigilia w roku 2222 wypada w <?= date("N" , mktime(0,0,0,12,24,2222))?> dniu tygodnia.</p>      
+<p id="c">Stan wojenny w Polsce wprowadzono 13 grudnia i była to <?= date("l" , mktime(0,0,0,12,13,1981))?></p> 
 
 
 
