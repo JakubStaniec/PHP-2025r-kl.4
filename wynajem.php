@@ -9,7 +9,7 @@
         div {
             background-color: beige;
             color: red;
-            border-radius: 20%
+            border-radius: 20px
         }
     </style>
 </head>
