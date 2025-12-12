@@ -48,6 +48,8 @@ $piatek2o = date_create("13:50"); $piatek2k = date_create("16:10");
 $sobota2o = date_create("20:05"); $sobota2k = date_create("22:35");
 $niedziela2o = date_create("16:00"); $niedziela2k = date_create("18:50");
 
+
+
 ?>
 </head>
 
@@ -87,11 +89,7 @@ $niedziela2o = date_create("16:00"); $niedziela2k = date_create("18:50");
 </tr>
 <tr>
 <td style="border: none;">
- <tr>
-            <td id="brak"></td>
-            <th colspan="7">Suma: <time><?=intdiv($SUMA,60)?>:<?=$SUMA%60?></time> (<strong><?=$SUMA?></strong> minut)</th>
-        </tr>
-
+ 
 </tr>
 </table>
 
