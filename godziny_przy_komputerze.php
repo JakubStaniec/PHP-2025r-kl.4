@@ -97,10 +97,6 @@ $pon_s=date_diff($poniedzialek2o, $poniedzialek2k)->h * 60 + 30;
 </tr>
 <tr>
 <td style="border: none;">
- 
-</tr>
-<tr>
-            <td id="brak"></td>
             <th colspan="7">Suma: <time><?=intdiv($SUMA,60)?>:<?=$SUMA%60?></time> (<strong><?=$SUMA?></strong> minut)</th>
         </tr>
 </table>
@@ -108,5 +104,4 @@ $pon_s=date_diff($poniedzialek2o, $poniedzialek2k)->h * 60 + 30;
 
 
 </body>
-
 </html>
