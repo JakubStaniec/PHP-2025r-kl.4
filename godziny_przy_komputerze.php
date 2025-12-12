@@ -35,7 +35,7 @@
     </style>
     <?php
     $poniedzialeko = "12:00";
-    $poniedzialekk = "15:30";
+    $poniedzialekk = "23:59";
     $wtoreko = "8:05";
     $wtorekk = "10:15";
     $srodao = "6:45";
@@ -50,7 +50,7 @@
     $niedzielak = "18:50";
 
     $poniedzialek2o = date_create("12:00");
-    $poniedzialek2k = date_create("15:30");
+    $poniedzialek2k = date_create("23:59");
     $wtorek2o = date_create("8:05");
     $wtorek2k = date_create("10:15");
     $sroda2o = date_create("6:45");
@@ -73,6 +73,8 @@
     $nie_s = date_diff($niedziela2o, $niedziela2k)->h * 60 + 50;
     $SUMA = $pon_s + $wto_s + $sro_s + $czw_s + $pia_s + $sob_s + $nie_s;
     $srednia = ($pon_s + $wto_s + $sro_s + $czw_s + $pia_s + $sob_s + $nie_s) / 7;
+
+    
     ?>
 
 </head>
@@ -120,8 +122,16 @@
             <th colspan="7">Średnio dziennie: <time><?= intdiv($srednia, 60) ?>:<?= $SUMA % 60 ?></time> (<strong><?= intdiv($SUMA, 7) ?></strong> minut)</th>
 
         </tr>
+        <tr>
+            <td style="border: none;">
 
-
+            <th colspan="7">Suma [dni : godziny : minuty : sekundy] 
+            <time><?= date('d',intdiv($SUMA,1440)) ?> : <?= date('H',intdiv($SUMA,1440)) ?> : <?= $SUMA%60?> : <?= date('s', number_format($SUMA%60/3600 , 1)) ?>
+        
+        
+            </time>
+        </th>
+        </tr>
 
     </table>
 
