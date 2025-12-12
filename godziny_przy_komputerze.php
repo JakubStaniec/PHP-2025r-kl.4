@@ -48,7 +48,7 @@ $piatek2o = date_create("13:50"); $piatek2k = date_create("16:10");
 $sobota2o = date_create("20:05"); $sobota2k = date_create("22:35");
 $niedziela2o = date_create("16:00"); $niedziela2k = date_create("18:50");
 
-$pon_s=date_diff($poniedzialek2o, $poniedzialek2k)->h * 60 + 30;
+    $pon_s=date_diff($poniedzialek2o, $poniedzialek2k)->h * 60 + 30;
     $wto_s=date_diff($wtorek2o, $wtorek2k)->h * 60 + 10;
     $sro_s=date_diff($sroda2o, $sroda2k)->h * 60 + 40;
     $czw_s=date_diff($czwartek2o, $czwartek2k)->h * 60 + 40;
@@ -56,7 +56,7 @@ $pon_s=date_diff($poniedzialek2o, $poniedzialek2k)->h * 60 + 30;
     $sob_s=date_diff($sobota2o, $sobota2k)->h * 60 + 30;
     $nie_s=date_diff($niedziela2o, $niedziela2k)->h * 60 + 50;
     $SUMA = $pon_s+$wto_s+$sro_s+$czw_s+$pia_s+$sob_s+$nie_s;
-    
+    $srednia = ($pon_s+$wto_s+$sro_s+$czw_s+$pia_s+$sob_s+$nie_s)/7;
     ?>
 
 </head>
@@ -99,6 +99,14 @@ $pon_s=date_diff($poniedzialek2o, $poniedzialek2k)->h * 60 + 30;
 <td style="border: none;">
             <th colspan="7">Suma: <time><?=intdiv($SUMA,60)?>:<?=$SUMA%60?></time> (<strong><?=$SUMA?></strong> minut)</th>
         </tr>
+<tr>
+<td style="border: none;">
+<th colspan="7">Średnio dziennie: <time><?=intdiv($srednia,60)?>:<?=$SUMA%60?></time> (<strong><?= intdiv ($SUMA,7) ?></strong> minut)</th>
+
+</tr>
+
+
+
 </table>
 
 
