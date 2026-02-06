@@ -11,7 +11,6 @@
 <?php
 $time = date("H:i:s");
 $seconds = (int) date("s");
-
 if ($seconds % 2 == 0) {
     $color = "red";
 } else {
