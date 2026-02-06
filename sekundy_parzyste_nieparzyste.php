@@ -2,17 +2,9 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sekundy</title>
-    <style>
-        p {
-            font-size: 220px;
-            font-weight: bold;
-            text-align: center;
-            border: 20px solid <?php echo $color; ?>;
-            color: <?php echo $color; ?>;
-            margin: 50px;
-        }
-    </style>
+    
 </head>
 <body>
     
@@ -27,6 +19,16 @@ if ($seconds % 2 == 0) {
 }
 ?>
 
+    <style>
+        p {
+            font-size: 220px;
+            font-weight: bold;
+            text-align: center;
+            border: 20px solid <?php echo $color; ?>;
+            color: <?php echo $color; ?>;
+            margin: 50px;
+        }
+    </style>
 <body>
 
 <p><?php echo $time; ?></p>
