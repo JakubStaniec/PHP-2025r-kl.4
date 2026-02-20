@@ -1,0 +1,204 @@
+🔹
+array_fill( służy do tworzenia nowej tablicy i wypełniania jej określoną wartością przez podaną liczbę elementów. Pozwala to na szybkie zainicjowanie tablicy danymi bez konieczności używania pętli. )
+array_key_exists( służy do sprawdzania, czy w tablicy istnieje określony klucz lub indeks. )
+array_keys(Zwraca wszystkie klucze z tablicy)
+array_pop(Usuwa ostatni element z tablicy i go zwraca.) 
+array_push(Dodaje jeden lub więcej elementów na koniec tablicy.) 
+array_reverse(Zwraca tablicę w odwróconej kolejności.) 
+array_search(Zwraca klucz pierwszego znalezionego elementu o podanej wartości.)
+array_slice(Zwraca część tablicy (wycinek).)
+array_unique(Usuwa duplikaty wartości z tablicy.) 
+array_values(Zwraca tablicę zawierającą same wartości (resetuje klucze do 0,1,2...).) 
+🔹
+count(Zwraca liczbę elementów w tablicy.)
+explode(Dzieli string na tablicę według separatora.) 
+in_array(Sprawdza czy wartość istnieje w tablicy (zwraca true / false).) 
+is_array(Sprawdza czy zmienna jest tablicą.) 
+range(Tworzy tablicę z zakresu liczb lub znaków.) 
+list(Przypisuje elementy tablicy do zmiennych.) 
+shuffle(Losowo miesza elementy tablicy.) 
+🔹
+sort(sortuje rosnąco (resetuje klucze).) 
+rsort(Sortuje malejąco (resetuje klucze).) 
+asort(Sortuje rosnąco z zachowaniem kluczy.) 
+ksort(Sortuje rosnąco według kluczy.) 
+arsort(Sortuje malejąco z zachowaniem kluczy.)
+krsort(Sortuje malejąco według kluczy.) 
+
+🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹
+
+array_fill()
+
+Tworzy tablicę wypełnioną tą samą wartością.
+
+array_fill(0, 3, "A");
+// wynik: ["A", "A", "A"]
+
+(start, liczba elementów, wartość)
+
+🔹
+
+array_key_exists()
+
+Sprawdza czy podany klucz istnieje w tablicy.
+
+array_key_exists("imie", $tablica);
+
+🔹
+
+array_keys()
+
+Zwraca wszystkie klucze tablicy.
+
+array_keys($tablica);
+
+🔹
+
+array_pop()
+
+Usuwa i zwraca ostatni element tablicy.
+
+array_pop($tablica);
+
+🔹
+
+array_push()
+
+Dodaje element(y) na koniec tablicy.
+
+array_push($tablica, "nowy");
+
+🔹
+
+array_reverse()
+
+Zwraca tablicę w odwrotnej kolejności.
+
+array_reverse($tablica);
+
+🔹
+
+array_search()
+
+Zwraca klucz pierwszego znalezionego elementu.
+
+array_search("Jan", $tablica);
+
+🔹
+
+array_slice()
+
+Zwraca fragment tablicy.
+
+array_slice($tablica, 1, 2);
+
+(start, długość)
+
+🔹
+
+array_unique()
+
+Usuwa duplikaty z tablicy.
+
+array_unique($tablica);
+
+🔹
+
+array_values()
+
+Zwraca same wartości i resetuje indeksy.
+
+array_values($tablica);
+
+🔹
+
+count()
+
+Zwraca liczbę elementów w tablicy.
+
+count($tablica);
+
+🔹
+
+explode()
+
+Dzieli tekst na tablicę według separatora.
+
+explode(",", "a,b,c");
+// wynik: ["a","b","c"]
+in_array()
+
+Sprawdza czy wartość istnieje w tablicy.
+
+in_array("Jan", $tablica);
+
+🔹
+
+is_array()
+
+Sprawdza czy zmienna jest tablicą.
+
+is_array($zmienna);
+
+🔹
+
+range()
+
+Tworzy tablicę z zakresu.
+
+range(1, 5);
+// wynik: [1,2,3,4,5]
+
+🔹
+
+list()
+
+Przypisuje elementy tablicy do zmiennych.
+
+list($a, $b) = [10, 20];
+// $a = 10, $b = 20
+
+🔹
+
+shuffle()
+
+Miesza elementy tablicy losowo.
+
+shuffle($tablica);
+
+🔹
+
+sort()
+
+Sortuje rosnąco (resetuje klucze).
+
+🔹
+
+rsort()
+
+Sortuje malejąco (resetuje klucze).
+
+🔹
+
+asort()
+
+Sortuje rosnąco z zachowaniem kluczy.
+
+🔹
+
+ksort()
+
+Sortuje rosnąco według kluczy.
+
+🔹
+
+arsort()
+
+Sortuje malejąco z zachowaniem kluczy.
+
+🔹
+
+krsort()
+
+Sortuje malejąco według kluczy.
+🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹
