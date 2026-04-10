@@ -31,6 +31,7 @@ array_fill()
 
 Tworzy tablicę wypełnioną tą samą wartością.
 
+
 array_fill(0, 3, "A");
 // wynik: ["A", "A", "A"]
 
